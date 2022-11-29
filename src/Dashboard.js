@@ -87,13 +87,23 @@ export default function BasicGrid() {
 									</Box>
 									<Box
 										sx={{
-											backgroundColor: 'black',
+											backgroundColor: '#f0f0f0',
 											width: '300px',
 											height: '300px',
 											borderRadius: '50%',
 											marginTop: '3rem',
+											border: '5px solid black',
+											outlineOffset: '-50px',
+											outline: '5px solid black',
 										}}
-									></Box>
+									>
+										<Typography
+											variant='h2'
+											style={{ marginTop: '110px', marginLeft: '100px' }}
+										>
+											65%
+										</Typography>{' '}
+									</Box>
 								</Grid>
 								<Grid xs={5} sx={{ marginTop: '10vh' }}>
 									<a
