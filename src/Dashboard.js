@@ -16,9 +16,10 @@ export default function BasicGrid() {
 		<Container>
 			<Header />
 			<Box sx={{ marginTop: '2em' }}>
-				<Grid container spacing={6}>
+				<Grid container spacing={9}>
 					<Grid xs={5}>
 						<Container
+							className='container1'
 							sx={{
 								backgroundColor: '#f0f0f0',
 								height: '20vh',
@@ -38,8 +39,10 @@ export default function BasicGrid() {
 									sx={{ textSize: '2rem' }}
 									variant='standard'
 								>
-									<InputLabel sx={{ fontSize: '2rem' }}>
-										Men Ages....
+									<InputLabel>
+										<Typography className='menLabel' variant='h5'>
+											Men Ages....
+										</Typography>
 									</InputLabel>
 									<Select sx={{ paddingTop: '6rem' }} label='Age'>
 										<MenuItem sx={{ fontSize: '2rem' }} value={18 - 27}>
@@ -57,6 +60,7 @@ export default function BasicGrid() {
 						</Container>
 
 						<Container
+							className='container2'
 							sx={{
 								backgroundColor: '#92bc2e',
 								height: '60vh',
@@ -65,6 +69,7 @@ export default function BasicGrid() {
 							}}
 						>
 							<Typography
+								className='demographicText'
 								variant='h1'
 								sx={{ fontSize: '3.3rem', fontWeight: 'bold' }}
 							>
@@ -80,24 +85,27 @@ export default function BasicGrid() {
 								marginBottom: '3rem',
 							}}
 						>
-							<Grid container spacing={1} sx={{ height: '100%' }}>
+							<Grid container spacing={2} sx={{ height: '100%' }}>
 								<Grid xs={7}>
-									<Box sx={{ padding: '2rem', fontSize: '1.5rem' }}>
-										Commonly shopped categories
-									</Box>
+									<Container sx={{ padding: '2rem', fontSize: '2rem' }}>
+										<Typography className='commonlyShopped' variant='body1'>
+											Commonly shopped categories
+										</Typography>
+									</Container>
 									<Box
+										className='chart'
 										sx={{
 											backgroundColor: '#f0f0f0',
 											width: '300px',
 											height: '300px',
 											borderRadius: '50%',
-											marginTop: '3rem',
 											border: '5px solid black',
 											outlineOffset: '-50px',
 											outline: '5px solid black',
 										}}
 									>
 										<Typography
+											className='chartInnerText'
 											variant='h2'
 											style={{ marginTop: '110px', marginLeft: '100px' }}
 										>
@@ -111,13 +119,19 @@ export default function BasicGrid() {
 										style={{ textDecoration: 'none', color: 'black' }}
 									>
 										<Box>
-											Perfumes and Fragrances
+											<Typography
+												className='perfumesFragrances'
+												variant='body1'
+											>
+												Perfumes and Fragrances
+											</Typography>
 											<KeyboardArrowRightIcon />
 										</Box>
 									</a>
 
-									<Box>
+									<Box className='highestSegmentBox'>
 										<Typography
+											className='highestSegment'
 											variant='h5'
 											style={{
 												color: '#bf2997',
@@ -135,41 +149,42 @@ export default function BasicGrid() {
 						<Container sx={{ backgroundColor: '#f0f0f0', height: '20vh' }}>
 							<Grid container spacing={1}>
 								<Grid xs={5}>
-									<Typography variant='h1'>85%</Typography>
+									<Typography className='percent' variant='h1'>
+										85%
+									</Typography>
 								</Grid>
 
-								<Grid xs={7}>
-									<Typography variant='body1' style={{ marginTop: '2rem' }}>
-										of all Purchases were online
-									</Typography>
-
-									<Container
-										style={{
-											width: '90px',
-											display: 'flex',
-											justifyContent: 'space-between',
-											position: 'fixed',
-											marginTop: '30px',
-											marginLeft: '3rem',
-										}}
-									>
-										<Box
+								<Grid>
+									<Grid xs={7}>
+										<Typography className='purchasesOnline' variant='body1'>
+											of all Purchases were online
+										</Typography>
+										<Container
+											className='graphs'
 											style={{
-												width: '20px',
-												height: '40px',
-												marginTop: '50px',
-												backgroundColor: '#327d9c',
+												width: '90px',
+												display: 'flex',
+												justifyContent: 'space-between',
+												marginTop: '50%',
 											}}
-										></Box>
-										<Box
-											style={{
-												width: '20px',
-												height: '90px',
-												backgroundColor: '#235291',
-												marginBottom: '60px',
-											}}
-										></Box>
-									</Container>
+										>
+											<Box
+												style={{
+													width: '20px',
+													height: '40px',
+													backgroundColor: '#327d9c',
+												}}
+											></Box>
+											<Box
+												style={{
+													width: '20px',
+													height: '90px',
+													marginTop: '-50px',
+													backgroundColor: '#235291',
+												}}
+											></Box>
+										</Container>
+									</Grid>
 								</Grid>
 							</Grid>
 						</Container>
