@@ -34,24 +34,54 @@ export default function BasicGrid() {
 									paddingTop: '1rem',
 								}}
 							>
-								<FormControl
-									fullWidth
-									sx={{ textSize: '2rem' }}
-									variant='standard'
+								<Typography
+									variant='h5'
+									style={{
+										position: 'absolute',
+										marginLeft: '9rem',
+										marginTop: '1rem',
+										color: '#797979',
+										fontWeight: 'bold',
+									}}
 								>
-									<InputLabel>
-										<Typography className='menLabel' variant='h5'>
-											Men Ages....
-										</Typography>
-									</InputLabel>
-									<Select sx={{ paddingTop: '6rem' }} label='Age'>
-										<MenuItem sx={{ fontSize: '2rem' }} value={18 - 27}>
+									Ages
+								</Typography>
+								<FormControl fullWidth sx={{ textSize: '1rem' }}>
+									<Select variant='standard'
+										style={{
+											width: '40%',
+											textAlign: 'center',
+											color: '#797979',
+										}}
+										defaultValue='Men'
+										label='Demographic'
+									>
+										<MenuItem value='Men'>
+											<Typography variant='h5' style={{ fontWeight: 'bold' }}>
+												Men
+											</Typography>
+										</MenuItem>
+										<MenuItem value='Women'>
+											<Typography style={{ fontWeight: 'bold' }} variant='h5'>
+												Women
+											</Typography>
+										</MenuItem>
+										<MenuItem value='Kids'>
+											<Typography style={{ fontWeight: 'bold' }} variant='h5'>
+												Kids
+											</Typography>
+										</MenuItem>
+									</Select>
+									<br />
+									<br />
+									<Select defaultValue='18 - 27' label='Age'>
+										<MenuItem sx={{ fontSize: '2rem' }} value='18 - 27'>
 											18 - 27
 										</MenuItem>
-										<MenuItem sx={{ fontSize: '2rem' }} value={27 - 45}>
+										<MenuItem sx={{ fontSize: '2rem' }} value='27 - 45'>
 											27 - 45
 										</MenuItem>
-										<MenuItem sx={{ fontSize: '2rem' }} value={45 - 65}>
+										<MenuItem sx={{ fontSize: '2rem' }} value='45 - 65'>
 											45 - 65+
 										</MenuItem>
 									</Select>
@@ -87,8 +117,16 @@ export default function BasicGrid() {
 						>
 							<Grid container spacing={2} sx={{ height: '100%' }}>
 								<Grid xs={7}>
-									<Container sx={{ padding: '2rem', fontSize: '2rem' }}>
-										<Typography className='commonlyShopped' variant='body1'>
+									<Container sx={{ fontSize: '2rem' }}>
+										<Typography
+											className='commonlyShopped'
+											variant='h5'
+											style={{
+												color: '#797979',
+												fontWeight: 'bold',
+												marginBottom: '2rem',
+											}}
+										>
 											Commonly shopped categories
 										</Typography>
 									</Container>
@@ -122,10 +160,11 @@ export default function BasicGrid() {
 											<Typography
 												className='perfumesFragrances'
 												variant='body1'
+												style={{ marginLeft: '3rem' }}
 											>
-												Perfumes and Fragrances
+												Perfumes and <br /> Fragrances
+												<KeyboardArrowRightIcon />
 											</Typography>
-											<KeyboardArrowRightIcon />
 										</Box>
 									</a>
 
