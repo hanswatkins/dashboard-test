@@ -90,14 +90,103 @@
 }
 @media only screen and (max-width: 425px) {
 	.container1 {
-		width: 160%;
+		width: 120%;
 	}
 
 	.container2 {
-		width: 160%;
+		width: 120%;
 	}
 
-	.container3 {
-		width: 160%;
+	body {
+		width: 145vw;
+	}
+
+	.agesPosition {
+		top: 78px;
+		left: 30px;
+	}
+
+	.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+		padding-top: 0rem;
+		text-align: center;
+	}
+
+	.css-h7v4yt-MuiFormControl-root {
+		margin-top: -20px;
+	}
+
+	.chart {
+		position: absolute;
+		left: 260px;
+		top: 140px;
+	}
+
+	.highestSegment {
+		font-size: 1rem;
+	}
+
+	.perfumesFragrances {
+		position: absolute;
+		left: 440px;
+	}
+
+	.graphs {
+		left: 500px;
+		top: 550px;
+	}
+
+	.percent {
+		margin-top: 0rem;
+	}
+}
+@media only screen and (max-width: 375px) {
+	body {
+		width: 155vw;
+	}
+	.container1 {
+		width: 130%;
+	}
+
+	.container2 {
+		width: 130%;
+	}
+
+	.agesPosition {
+		top: 78px;
+		left: 28px;
+	}
+
+	.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+		padding-top: 0rem;
+		text-align: center;
+	}
+
+	.css-h7v4yt-MuiFormControl-root {
+		margin-top: -20px;
+	}
+
+	.chart {
+		position: absolute;
+		left: 260px;
+		top: 140px;
+	}
+
+	.highestSegment {
+		font-size: 1.5rem;
+	}
+
+	.perfumesFragrances {
+		position: absolute;
+		left: 420px;
+		top: 200px;
+	}
+
+	.graphs {
+		left: 450px;
+		top: 780px;
+	}
+
+	.percent {
+		margin-top: 0rem;
 	}
 }

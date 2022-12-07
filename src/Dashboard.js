@@ -35,6 +35,7 @@ export default function BasicGrid() {
 								}}
 							>
 								<Typography
+									className='agesPosition'
 									variant='h5'
 									style={{
 										position: 'absolute',
@@ -118,7 +119,7 @@ export default function BasicGrid() {
 						>
 							<Grid container spacing={2} sx={{ height: '100%' }}>
 								<Grid xs={7}>
-									<Container sx={{ fontSize: '2rem' }}>
+									<Container className='container3' sx={{ fontSize: '2rem' }}>
 										<Typography
 											className='commonlyShopped'
 											variant='h5'
