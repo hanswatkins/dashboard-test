@@ -39,7 +39,7 @@ export default function BasicGrid() {
 									style={{
 										position: 'absolute',
 										marginLeft: '9rem',
-										marginTop: '1rem',
+										marginTop: '2rem',
 										color: '#797979',
 										fontWeight: 'bold',
 									}}
@@ -47,7 +47,8 @@ export default function BasicGrid() {
 									Ages
 								</Typography>
 								<FormControl fullWidth sx={{ textSize: '1rem' }}>
-									<Select variant='standard'
+									<Select
+										variant='standard'
 										style={{
 											width: '40%',
 											textAlign: 'center',
@@ -75,13 +76,13 @@ export default function BasicGrid() {
 									<br />
 									<br />
 									<Select defaultValue='18 - 27' label='Age'>
-										<MenuItem sx={{ fontSize: '2rem' }} value='18 - 27'>
+										<MenuItem  value='18 - 27'>
 											18 - 27
 										</MenuItem>
-										<MenuItem sx={{ fontSize: '2rem' }} value='27 - 45'>
+										<MenuItem  value='27 - 45'>
 											27 - 45
 										</MenuItem>
-										<MenuItem sx={{ fontSize: '2rem' }} value='45 - 65'>
+										<MenuItem  value='45 - 65'>
 											45 - 65+
 										</MenuItem>
 									</Select>

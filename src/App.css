@@ -65,13 +65,39 @@
 	}
 }
 
-@media only screen and (max-width: 500px) {
-	.chart {
-		width: 150px;
-		height: 150px;
-		outline-offset: -30px;
-		outline: 2px solid black;
-		border: 2px solid black;
-		margin-top: 20px;
+@media only screen and (max-width: 1024px) {
+	.container1 {
+		width: 110%;
+	}
+	.container2 {
+		width: 110%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.highestSegment {
+		padding-top: 2rem;
+	}
+
+	.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.MuiSelect-select {
+		overflow: visible;
+	}
+
+	.graphs {
+		position: absolute;
+		top: 585px;
+		left: 550px;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.container1 {
+		width: 160%;
+	}
+
+	.container2 {
+		width: 160%;
+	}
+
+	.container3 {
+		width: 160%;
 	}
 }
